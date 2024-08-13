@@ -1,0 +1,72 @@
+{
+	"groups": [
+		{
+			"keys": "player01_ske_json,skin_json,scene_json,enemy01_ske_json,effect_json,allRoleTex_tex_json,allRoleTex_tex_png,Hm_txt",
+			"name": "loading"
+		},
+		{
+			"keys": "Hm_txt,dieEffect_mp3,ui_json,logo_bg_png",
+			"name": "preload"
+		}
+	],
+	"resources": [
+		{
+			"url": "wx/anim/player01_ske.json",
+			"type": "json",
+			"name": "player01_ske_json"
+		},
+		{
+			"url": "wx/anim/skin.json",
+			"type": "json",
+			"name": "skin_json"
+		},
+		{
+			"url": "wx/atlas/scene.json",
+			"type": "sheet",
+			"name": "scene_json",
+			"subkeys": "boombox,boombox1,boombox2,cloud,ironball,ironball1,ironbox,ironbox1,ironbox2,ironbox3,ironbox4,ironstrip,line,nail,ray,target,terrain,terrainbg,thorn,woodbox,woodbox1,woodbox2,woodstrip"
+		},
+		{
+			"url": "wx/anim/enemy01_ske.json",
+			"type": "json",
+			"name": "enemy01_ske_json"
+		},
+		{
+			"url": "particle/effect.json",
+			"type": "sheet",
+			"name": "effect_json",
+			"subkeys": "be0,be1,be2,be3,be4,be5,blood0,blood1,blood4,bullet01,bulletshell,bx0,bx1,bx2,bx3,bx4,bx5,bx6,bx7,bx8,dust0,dust1,dust2,dust3,ec0,ec1,ec2,ec3,ec4,ec5,ec6,ec7,ec8,ec9,ed0,ed1,ed2,ed3,ed4,ed5,ed6,ed7,ed8,ed9,explode,fd0,fd1,fd10,fd11,fd2,fd3,fd4,fd5,fd6,fd7,fd8,fd9,light,spark,spark1,spark2,tnt_03,tnt_08,wbb0,wbb1,wpb0,wpb1,wpb2"
+		},
+		{
+			"url": "wx/anim/allRoleTex_tex.json",
+			"type": "json",
+			"name": "allRoleTex_tex_json"
+		},
+		{
+			"url": "wx/anim/allRoleTex_tex.png",
+			"type": "image",
+			"name": "allRoleTex_tex_png"
+		},
+		{
+			"url": "wx/tables/Hm.txt",
+			"type": "text",
+			"name": "Hm_txt"
+		},
+		{
+			"url": "wx/sound/dieEffect.mp3",
+			"type": "sound",
+			"name": "dieEffect_mp3"
+		},
+		{
+			"name": "ui_json",
+			"type": "sheet",
+			"url": "wx/atlas/ui.json",
+			"subkeys": "upbackground,viewnoloading,viewprogress,voice,voicebg,watchvideos,wholebg,wx_icon,add,addbg,back,bosslevel,box_p,btn_1,bullet,bullet_1,bullletExplosion,character_1,character_2,character_3,close,confirm,cr_p5,deadword,deadword1,deadword2,deathnumber,downbackground,downBg,elite,endpoint,energy,exit,exit_1,fingerEffects,flash,g_back,gamebenefits,getgun,getskinprogress,guideblast,guideconfirm,guidefinger,guidewoodbox,gun_03,gunbackground,gunchoose,gunidentification,gunmodel,gunnochoose,labelbg,levelprogress,lock,m_progress0,m_progress1,m_reward,middlebg,modelbg,money,moneybackground,originalgun,otherbg,p_pause,p_replay,passingboss,passinglevel,passlevel,passlevelchange,reward,rewardbg,rewardBox,setting,share,share_1,share_2,share_3,share_4,share_5,share_6,share_7,share_8,sharebg,shock,shockbg,shopBg,shopBoss,shopconfirm,sign,sign_btn,sign_light,sign_light2,sign_today,skinidentification,star,startingpoint,surplusgunprogess,surplusSkinprogress,Tipsbtn,titleBg,color_3,color_4,color_1,color_2"
+		},
+		{
+			"name": "logo_bg_png",
+			"type": "image",
+			"url": "wx/logo_bg.png"
+		}
+	]
+}
