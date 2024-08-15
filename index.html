@@ -18,6 +18,11 @@
         setThemeClass();
 
     </script>
+    <script src="https://cdn.bootcss.com/vConsole/3.2.0/vconsole.min.js"></script>
+    <script>
+        var vConsole = new VConsole();
+    </script>
+
     <title></title>
     <style>
         body {
@@ -691,6 +696,10 @@
                 DemoApp.initData &&
                 webViewStatus.classList.contains('status_need')
             ) {
+                console.log("DemoApp.initDataUnsafe: " );
+                console.log(DemoApp.initDataUnsafe);
+                console.log("DemoApp.initData: " );
+                console.log(DemoApp.initData);
                 webViewStatus.classList.remove('status_need');
                 DemoApp.apiRequest('checkInitData', {}, function (result) {
                     if (result.ok) {
