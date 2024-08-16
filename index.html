@@ -32,9 +32,9 @@
             padding: 10px;
             margin-top: 10px;
             width: 100%;
-            max-height: 500px; /* You can adjust this max-height */
-            overflow-y: auto;  /* Enables scrolling if content exceeds max height */
-            flex-grow: 1;  /* Makes it flexible */
+            max-height: 500px;
+            overflow-y: auto;
+            flex-grow: 1;
         }
         button {
             width: 100%;
@@ -47,42 +47,36 @@
 <body>
 
 <div class="container">
-    <!-- Input Section -->
+
     <div class="input-section">
         <input type="text" id="inputBox" placeholder="Enter text here" style="width: 100%; padding: 10px;">
-        <button id="submitButton">Submit22</button>
+        <button id="send">send2222222</button>
     </div>
 
-    <!-- Button Section -->
     <div class="button-section">
-        <button id="button1">Button 1</button>
-        <button id="button2">Button 2</button>
+        <button id="button1">button1</button>
+        <button id="button2">button2</button>
     </div>
 
-    <!-- Display Section -->
-    <div class="display-section" id="displayArea">
-        <!-- Object display area -->
-    </div>
+    <div class="display-section" id="displayArea"></div>
+    
     
 </div>
 
 <script>
-    console.log("1111111111111111111")
+    console.log("7777777777")
     document.getElementById('displayArea').innerHTML = JSON.stringify(Telegram.WebApp.initDataUnsafe, null, 2);
 
-    // Event listener for Submit button
-    document.getElementById('submitButton').addEventListener('click', function() {
+    document.getElementById('send').addEventListener('click', function() {
         const inputText = document.getElementById('inputBox').value;
-        document.getElementById('displayArea').innerText = inputText;
     });
 
-    // Placeholder event listeners for Button 1 and Button 2
     document.getElementById('button1').addEventListener('click', function() {
-        // Add your logic here
+
     });
 
     document.getElementById('button2').addEventListener('click', function() {
-        // Add your logic here
+
     });
 
 
