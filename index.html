@@ -30,8 +30,11 @@
         .display-section {
             border: 1px solid #ccc;
             padding: 10px;
-            height: 100px;
-            overflow: auto;
+            margin-top: 10px;
+            width: 100%;
+            max-height: 500px; /* You can adjust this max-height */
+            overflow-y: auto;  /* Enables scrolling if content exceeds max height */
+            flex-grow: 1;  /* Makes it flexible */
         }
         button {
             width: 100%;
@@ -57,14 +60,16 @@
     </div>
 
     <!-- Display Section -->
-    <div class="display-section" id="displayArea">
-        <!-- Object display area -->
-    </div>
+    <!-- <div class="display-section" id="displayArea">
+    </div> -->
+
+    <pre><code id="webview_data"></code></pre>
+
 </div>
 
 <script>
     console.log("1111111111111111111")
-    document.getElementById('displayArea').innerHTML = JSON.stringify(Telegram.WebApp.initDataUnsafe, null, 2);
+    document.getElementById('webview_data').innerHTML = JSON.stringify(Telegram.WebApp.initDataUnsafe, null, 2);
 
     // Event listener for Submit button
     document.getElementById('submitButton').addEventListener('click', function() {
