@@ -58,14 +58,17 @@
         <button id="button2">button2</button>
     </div>
 
-    <div class="display-section" id="displayArea"></div>
+    <div class="display-section" id="initData"></div>
+
+    <div class="display-section" id="initDataUnsafe"></div>
     
     
 </div>
 
 <script>
     console.log("7777777777")
-    document.getElementById('displayArea').innerHTML = JSON.stringify(Telegram.WebApp.initDataUnsafe, null, 2);
+    document.getElementById('initData').innerHTML = JSON.stringify(Telegram.WebApp.initData, null, 2);
+    document.getElementById('initDataUnsafe').innerHTML = JSON.stringify(Telegram.WebApp.initDataUnsafe, null, 2);
 
     document.getElementById('send').addEventListener('click', function() {
         const inputText = document.getElementById('inputBox').value;
